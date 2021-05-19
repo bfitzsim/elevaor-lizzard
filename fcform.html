@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FCform</title>
+	<style>
+		table, tr {        	
+			text-align:left;
+			margin:auto;
+			border-style:solid;
+			
+			
+			
+		}
+		td {
+			width:50%;
+			padding:10px;
+			justify-content:left;
+			border-style:solid;			
+			
+		}
+		#main {
+			margin:auto;
+			text-align:center;        	  
+		}
+		#main #title { 
+		}
+		#description {font-size:1.4em; 
+		}
+
+
+		#survey-form {         	
+			width:660px;
+			height:auto; 
+			margin:auto;
+			border-style:solid;
+			border-color:black;
+			border-width:2px;
+			border-radius:20px;
+			box-shadow:5px 5px 5px;
+			background:lightgreen;
+			font-size:1.4em;
+			font-weight:bold;				
+		}
+		#dropdown { 
+			background-color:white;      	
+		}
+		#link { 
+			margin:auto;
+			text-align:center;		
+		}            
+
+		input,select,textarea {
+			border-radius:8px;
+			width:20em;
+			height:2em;
+			} 
+			 
+	</style>
+</head>
+<body>    
+<div id="main">	
+	<h1 id="title">FC Form</h1>
+	<p id="description">Fill in the form</p>
+</div>    
+<div id ="form">
+<form  id = "survey-form" action="info.php">
+<table>
+	<tr>
+		<td><label for="name" id="name-label">name:</label></td>
+		<td><input id="name" type="text" name="name" placeholder="name" required></td>
+	</tr>
+	<tr>
+		<td><label for="email" id="email-label">email:</label></td>
+		<td><input id="email" type="email" name="email" placeholder="email" required pattern="[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+"></td>
+	</tr>
+	<tr>
+		<td><label for="number" id="number-label">number:</label></td>
+		<td><input id="number" type="number" name="number" min="0" max="9" placeholder="number"></td>
+	</tr>
+	<tr>
+		<td><label for="cars">Choose a car:</label></td>
+		<td><select name="cars" id="dropdown">
+		  <option value="volvo">Volvo</option>
+		  <option value="saab">Saab</option>
+		  <option value="mercedes">Mercedes</option>
+		  <option value="audi">Audi</option>
+		</select></td>
+	</tr>
+	<tr>
+		<td ><label for="male">Male</label></td>
+		<td><input type="radio" id="male" name="gender" value="male"></td>
+	</tr>
+	<tr>
+		<td><label for="female">Female</label></td>
+		<td><input type="radio" id="female" name="gender" value="female"></td>
+	</tr>
+	<tr>
+		<td><label for="other">Other</label></td>
+		<td><input type="radio" id="other" name="gender" value="other"></td>
+	</tr>
+	<tr>
+		<td>I have a bike</td>
+		<td><input type="checkbox" name="vehicle1" value="Bike"></td>
+	</tr>
+	<tr>
+		<td>I have a car</td>
+		<td><input type="checkbox" name="vehicle2" value="Car"></td>
+	<tr>
+	</tr>
+		<td>I have a boat</td>
+		<td><input type="checkbox" name="vehicle3" value="Boat"></td>
+	</tr>
+	<tr>
+		<td><label for="comments">Comments:</label></td>
+		<td><textarea id="comments" name="comments" placeholder="Max 200 charachters" rows="4" cols="50" maxlength="200">
+	</textarea></td>
+	</tr>
+	<tr>
+		<td colspan="2" style="text-align: center"><input id="submit" type="submit" value="Submit"></td>
+	</tr>
+</table>
+</form>
+</div>
+<div id="link">
+	<p><a href="/index.html"; alt="Kappa">Kappa</a></p>
+</div>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
