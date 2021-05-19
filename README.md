@@ -1,2 +1,2 @@
 # elevaor-lizzard
-test pages
+This is a folder of files for FCC.
