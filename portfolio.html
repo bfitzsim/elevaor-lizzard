@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Portfolio</title>
+<style>
+
+#navbar {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:16vh;
+	
+	background:#be3144;
+	display:flex;	
+	justify-content:flex-end;
+	align-items:center;
+	text-align:center;
+	flex-wrap:nowrap;	
+}
+#nav1{	
+	flex-basis:120px;
+	color:white;	
+}
+#nav2{	
+	flex-basis:120px;
+	color:white;	
+}
+#navbar a {
+	text-decoration:none;
+}
+#welcome-section {
+	position:absolute;
+	top:16vh;
+	
+	width:100vw;
+	height:100vh;	
+	background:black;
+	display:flex;
+	flex-direction:column;
+	flex-wrap:nowrap;
+	justify-content:center;
+	align-items:center;
+	color:white;
+	font-size:0.8em;	
+}
+@media screen and (min-width: 601px) {
+  #welcome-section {
+    font-size: 2em;
+  }
+}
+#projects {
+	position:relative;
+	top:116vh;
+	
+	width:100%;
+	height:100vh;	
+	background:#45567d;
+	color:white;
+	font-size:1.2em;
+	
+}
+#contact {
+	position:relative;
+	top:116vh;
+	
+	width:100%;
+	height:100vh;	
+	background:black;
+	color:white;
+	font-size:1.2em;
+}
+.project-tile {
+	display:flex;
+	width:100%;
+	height:100%;	
+	justify-content:center;
+}
+#profile-link {
+	font-size:80px;
+	margin:20px;	
+	flex-basis:40%;
+	height:50%;
+	border-radius:20px;	
+}
+#profile-link img {
+	width:100%;
+	height:100%;
+	border-radius:20px;
+	
+}
+#pad {
+	position:relative;
+	top:-16vh;	
+}
+#pad1 {
+	position:relative;
+	top:-16vh;	
+}
+body {
+	background:lightgray;
+}
+
+</style>
+</head>
+<body>
+
+<section id="welcome-section">
+	<h1>Welcome to Kappa's Page</h1>
+	<p style="color:#be3144">A collection of Projects</p>	
+</section>
+
+<section id="projects">
+	<a id="pad"></a>
+	
+	<h1>These are some of my projects</h1>
+	
+	<div class="project-tile">
+		<a id="profile-link" target="_blank" href="https://htmlpreview.github.io/?https://github.com/
+		bfitzsim/elevaor-lizzard/blob/main/fcform.html"><img src="techdoc.png"></a>
+		<a id="profile-link" target="_blank" href="https://htmlpreview.github.io/?https://github.com/
+		bfitzsim/elevaor-lizzard/blob/main/fcform.html"><img src="personal.png"></a>
+	</div>
+	
+</section>
+<section id="contact">
+	<a id="pad1"></a>
+	
+	<h1>Contact Us</h1>
+		
+		
+	<div class="project-tile">
+		<a id="profile-link" href="#"><img src="facebook.png"></a>
+		<a id="profile-link" href="#"><img src="phone.png"></a>
+		<a id="profile-link" href="#"><img src="mail.png"></a>
+		
+	</div>
+	
+</section>
+
+
+<nav id="navbar">
+	<a id="nav1" href="#pad" alt="projects">Projects</a>
+	<a id="nav2" href="#pad1" alt="contactus">Contact Us</a>
+	</nav>
+	
+
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
